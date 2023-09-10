@@ -9,14 +9,20 @@ Para converter graus Fahrenheit em graus Celsius, subtraia 32 e divida por 1,8.
 """
 
 
+def novaLinha():
+    print()
+
+
 f = float(input("Digite a temperatura em graus Fahrenheit  : "))
 c = (f - 32) / (1.8)
-print(f, " Fahrenheit é  Celcius é %.2f" %  c)
-print(f, " Fahrenheit é  Celcius é ", round(c,2))
+novaLinha()
+print(f, " Fahrenheit é  Celcius é %.2f" % c)
+print(f, " Fahrenheit é  Celcius é ", round(c, 2))
 
+novaLinha()
+novaLinha()
 c = float(input("Digite a temperatura em graus Celcius  : "))
 f = (c * 1.8) + 32
-
-print(c, " Fahrenheit é  Fahrenheit é %.2f" %  f)
-print(c, " Fahrenheit é  Fahrenheit é ", round(f,2))
-
+novaLinha()
+print(c, " Fahrenheit é  Fahrenheit é %.2f" % f)
+print(c, " Fahrenheit é  Fahrenheit é ", round(f, 2))
