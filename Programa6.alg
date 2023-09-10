@@ -16,7 +16,7 @@ Inicio
    escreva("Digite qtd Feminino : ")
    leia(qtdFem)
 
-   escreva("Digite a qtd aprovador : ")
+   escreva("Digite a qtd aprovados : ")
    leia(qtdApr)
 
    totalAlunos <- qtdMasc + qtdFem
