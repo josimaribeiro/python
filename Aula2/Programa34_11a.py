@@ -9,27 +9,16 @@ salarioBase = float(input("Salario  Base................: "))
 codigoFuncao = int(input("Codigo da funcao.............: "))
 salarioLiquido = 0.0
 reaj = 0.0
-
-match codigoFuncao:
-    case 100:
-        print("Reajuste de..................: 2%")
-        reaj = salarioBase * 2 / 100
-
-    case 300:
-        print("Reajuste de..................: 3%")
-        reaj = salarioBase * 3 / 100
-
-    case 400:
-        print("Reajuste de..................: 5%")
-        reaj = salarioBase * 5 / 100
-
-    case 600:
-        print("Reajuste de..................: 7%")
-        reaj = salarioBase * 7 / 100
-
-    case _:
-        print("Digitou alguma coisa errada")
-        
+if codigoFuncao == 100:
+    reaj = salarioBase * 2 / 100
+elif codigoFuncao == 300:
+    reaj = salarioBase * 3 / 100
+elif codigoFuncao == 400:
+    reaj = salarioBase * 5 / 100
+elif codigoFuncao == 600:
+    reaj = salarioBase * 7 / 100
+else:
+    print("Digitou alguma coisa errada")
 
 print("Valor do reajuste............: %.2f " % reaj)
 salarioLiquido = salarioBase + reaj
